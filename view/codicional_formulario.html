@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <style>
+        #mitabla{
+            margin: auto;
+            width: 24%;
+            border: 2px solid silver;
+        }
+        td{
+            border: 2px solid silver;
+        }
+    </style>
+    <body id="cuerpo">
+        <form name="form" method="post" action="" id="formulario">
+            <table id="mitabla">
+                <tr>
+                    <td><label for="nombre">Nombre:</label></td>
+                    <td><input id="nombre" name="nombre" type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="apellidos">Apellidos:</label></td>
+                    <td><input id="apellidos" name="apellidos" type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="edad">Edad:</label></td>
+                    <td><input id="edad" name="edad" type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="carne">Carne:</label></td>
+                    <td><input id="carne" name="carne" type="text"></td>
+                </tr>
+                <tr>
+                    <td><input id="enviar" name="enviar" type="submit" value="Enviar"></td>
+                    <td><input id="reset" name="reset" type="reset" value="Reestablecer"></td>
+                </tr>
+            </table>
+        </form>
+        <script>
+            let cuerpo = document.getElementById("cuerpo");
+            let colorWeb = prompt("Introduce el color de fondo . Azul/Verde/Rojo").toLowerCase();
+
+            switch (colorWeb) {
+               case "azul"  : cuerpo.style.backgroundColor = "blue";
+               break;
+               case "verde" : cuerpo.style.backgroundColor =  "green";
+               break;
+               case "rojo"  : cuerpo.style.backgroundColor = "red";
+               break;
+               default:
+                   alert("Ese color no esta contemplado");
+                   break;
+            }
+
+            let nombre    = document.getElementById("nombre");
+            let apellidos = document.getElementById("apellidos");
+            let edad      = document.getElementById("edad");
+            let carne     = document.getElementById("carne");
+
+
+
+        </script>
+
+    </body>
+</html>

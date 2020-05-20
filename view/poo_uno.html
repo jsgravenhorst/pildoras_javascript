@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+        <input id="boton1" type="button">
+        <input id="boton2" type="button">
+        <input id="texto" type="text">
+
+        <script>
+
+            let miboton = document.getElementById("boton1");
+            let miboton2 = document.getElementById("boton2");
+            let texto = document.getElementById("texto");
+
+            miboton.style.width = "250px";
+            miboton.style.height = "50px";
+            miboton.style.background = "orange";
+
+            miboton2.style.width = "250px";
+            miboton2.style.height = "50px";
+            miboton2.style.background = "red";
+
+            miboton.focus();
+
+            texto.style.backgroundColor = "yellow";
+            texto.value = "Escriba aqui...";
+
+        </script>
+    </body>
+</html>

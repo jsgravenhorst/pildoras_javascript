@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <script>
+            let articulos = ["Zapatillas", "Camisetas", "Pantalones", "Medias"];
+
+            /* Otra forma de declar un array*/
+            /*var arreglo = new Array("Johann", "Stig", "Gravenhorst", "Rodriguez");*/
+        </script>
+    </head>
+    <body>
+        <script>
+
+            /* Agrega un elemento a la primera posicion del array*/
+            articulos.unshift("Camisas");
+
+            /* Agregan do un elemento mas al final */
+            /* con la funcion prompt capturamos el valor a insertar en el arreglo*/
+            articulos.push(prompt("Digite un elemento al arreglo"));
+
+            document.write("<p> Los articulos del arreglo son:<br/></br>");
+
+            for(let i = 0; i < articulos.length; i++) {
+                document.write(" <strong> " + articulos[i] + "</strong> </p><br/>");
+            }
+
+            alert("Ahora borraremos el ultimo elemento");
+            /* pop() borra el ultimo elemento del arreglo */
+            articulos.pop();
+
+            for(let i = 0; i < articulos.length; i++) {
+                document.write(" <strong> " + articulos[i] + "</strong> </p><br/>");
+            }
+
+        </script>
+    </body>
+</html>

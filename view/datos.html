@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <style>
+            #contenedor{
+                width: 25%;
+                background-color: #FFC;
+                margin: auto;
+                padding: 15px;
+            }
+        </style>
+        <script>
+            let nombre, edad, poblacion;
+            nombre    = prompt("Digite nombre");
+            edad      = prompt("Digite edad");
+            while (edad <=0 || edad > 105 || isNaN(edad)) {
+                edad      = prompt("Digite edad");
+            }
+            poblacion = prompt("Digite poblacion");
+        </script>
+    </head>
+    <body>
+        <div id="contenedor">
+            <p>Nombre:    <script>document.write(nombre);</script></p>
+            <p>Edad:      <script>document.write(edad);</script></p>
+            <p>Poblacion: <script>document.write(poblacion);</script></p>
+        </div>
+    </body>
+</html>
